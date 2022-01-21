@@ -13,8 +13,9 @@
   
   .imgContainer {
     width: 100px;
-    height: 100px;
-    padding: 10px;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
     position: relative;
   }
   
@@ -141,8 +142,8 @@
     }
   
     .imgContainer{
-      width: 35vw;
-      height: 35vw;
+      width: 60vw;
+      height: 90vw;
     }
   
     .name,.total{
