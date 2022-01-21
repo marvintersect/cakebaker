@@ -5,15 +5,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint eslint src --ext .ts,.tsx"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.5.1",
+    "@reduxjs/toolkit": "^1.7.1",
+    "axios": "^0.25.0",
+    "cookie": "^0.4.1",
+    "mongoose": "^6.1.7",
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "autoprefixer": "^10.4.2",
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "12.0.8",
+    "eslint-plugin-react": "^7.28.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15"
   }
 }

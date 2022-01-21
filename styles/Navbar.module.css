@@ -1,0 +1,95 @@
+.container{
+    background-color: whitesmoke;
+    height: 100px;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 25;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-child(2){
+    flex: 3;
+    justify-content: center;
+}
+
+.item:nth-child(3){
+    justify-content: flex-end;
+}
+
+.callButton{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.texts{
+    margin-left: 20px;
+    color: #3e4166;
+}
+
+.text:first-child{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text:last-child{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list{
+    padding: 0px;
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    color: #3e4166;
+}
+
+.listItem{
+    margin: 20px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+.cakeCart{
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background-color: #3e4166;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+@media screen and (max-width:480px) {
+    .item:nth-child(2){
+        display: none;
+    }
+
+    .item:nth-child(1){
+        flex: 3;
+    }
+}

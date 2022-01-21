@@ -1,0 +1,58 @@
+.container{
+    height: calc(100vh - 500px);
+    background-color: black;
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.item:last-child {
+    flex: 3;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+.card{
+    flex: 1;
+    padding: 0px 20px;
+}
+
+.title{
+    font-size: 24px;
+    color: #f598b0;
+}
+
+.text {
+    color: white;
+  }
+  
+  .motto {
+    color: #4dc6e1;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      height: auto;
+      text-align: center;
+    }
+    .item:first-child {
+      display: none;
+    }
+  
+    .item {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  
+    .text {
+      font-size: 20px;
+    }
+  }
